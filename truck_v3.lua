@@ -2,7 +2,6 @@
 -- base profile version for truck from https://raw.githubusercontent.com/Project-OSRM/osrm-profiles-contrib/master/5/21/truck-soft/car.lua
 -- Features:
 --    1. left_hand_driving | false -> true
---    2. service_penalties of v1
 api_version = 4
 
 Set = require('lib/set')
@@ -177,13 +176,13 @@ function setup()
     },
 
     service_penalties = {
-      alley             = 0,
-      parking           = 0,
-      parking_aisle     = 0,
+      alley             = 0.1,
+      parking           = 0.1,
+      parking_aisle     = 0.1,
       driveway          = 0.5,
       ["drive-through"] = 0.5,
       ["drive-thru"] = 0.5
-    }
+    },
 
     restricted_highway_whitelist = Set {
       'motorway',

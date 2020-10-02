@@ -180,7 +180,7 @@ function setup()
       driveway          = 0.5,
       ["drive-through"] = 0.5,
       ["drive-thru"] = 0.5
-    }
+    },
 
     restricted_highway_whitelist = Set {
       'motorway',
